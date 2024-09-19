@@ -1,0 +1,139 @@
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap");
+
+@keyframes shake {
+	0% {
+		transform: translate(1px, 1px) rotate(0deg);
+	}
+	10% {
+		transform: translate(-1px, -2px) rotate(-1deg);
+	}
+	20% {
+		transform: translate(-3px, 0px) rotate(1deg);
+	}
+	30% {
+		transform: translate(3px, 2px) rotate(0deg);
+	}
+	40% {
+		transform: translate(1px, -1px) rotate(1deg);
+	}
+	50% {
+		transform: translate(-1px, 2px) rotate(-1deg);
+	}
+	60% {
+		transform: translate(-3px, 1px) rotate(0deg);
+	}
+	70% {
+		transform: translate(3px, 1px) rotate(-1deg);
+	}
+	80% {
+		transform: translate(-1px, -1px) rotate(1deg);
+	}
+	90% {
+		transform: translate(1px, 2px) rotate(0deg);
+	}
+	100% {
+		transform: translate(1px, -2px) rotate(-1deg);
+	}
+}
+
+@keyframes shake2 {
+	0% {
+		transform: translate(1px, 1px) rotate(0deg);
+	}
+	10% {
+		transform: translate(-1px, -2px) rotate(-1deg);
+	}
+	20% {
+		transform: translate(-3px, 0px) rotate(1deg);
+	}
+	30% {
+		transform: translate(3px, 2px) rotate(0deg);
+	}
+	40% {
+		transform: translate(1px, -1px) rotate(1deg);
+	}
+	50% {
+		transform: translate(-1px, 2px) rotate(-1deg);
+	}
+	60% {
+		transform: translate(-3px, 1px) rotate(0deg);
+	}
+	70% {
+		transform: translate(3px, 1px) rotate(-1deg);
+	}
+	80% {
+		transform: translate(-1px, -1px) rotate(1deg);
+	}
+	90% {
+		transform: translate(1px, 2px) rotate(0deg);
+	}
+	100% {
+		transform: translate(1px, -2px) rotate(-1deg);
+	}
+}
+
+body {
+	font-size: 32px;
+	width: 100dvw;
+	height: 100dvh;
+	margin: 0;
+	text-align: center;
+	background: #aa4b6b; /* fallback for old browsers */
+	background: -webkit-linear-gradient(
+		to right,
+		#aa4b6b,
+		#6b6b83,
+		#3b8d99
+	); /* Chrome 10-25, Safari 5.1-6 */
+	background: linear-gradient(
+		to right,
+		#aa4b6b,
+		#6b6b83,
+		#3b8d99
+	); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+	font-family: "DM Sans";
+
+	user-select: none;
+	overflow: hidden;
+}
+
+#container {
+	display: inline-block;
+	aspect-ratio: 1/1;
+	background: #4baa8a44;
+
+	max-width: 90dvw;
+	max-height: 90dvh;
+	margin: auto auto;
+	display: grid;
+	position: relative;
+}
+
+.tile {
+	position: absolute;
+
+	display: flex;
+
+	align-items: center;
+	justify-content: center;
+	transition: all ease-in-out 300ms;
+}
+
+.tile:hover {
+	background-color: #ffffff44;
+	cursor: pointer;
+}
+
+button {
+	background-color: #dddddd44;
+	font-size: inherit;
+	border-radius: 9999;
+	padding: 10px;
+	font-family: inherit;
+	cursor: pointer;
+}
+
+button:disabled {
+	cursor: progress;
+}
