@@ -1,11 +1,10 @@
 {
-  "name": "slider-game",
-  "version": "1.0.0",
-  "main": "index.js",
-  "repository": "https://github.com/Coder2195Text/slider-game.git",
-  "author": "Coder2195Text <coder2195mail@gmail.com>",
-  "license": "MIT",
-  "devDependencies": {
-    "parcel": "^2.12.0"
-  }
+	"name": "slider-game",
+	"version": "1.0.0",
+	"repository": "https://github.com/Coder2195Text/slider-game.git",
+	"author": "Coder2195Text <coder2195mail@gmail.com>",
+	"license": "MIT",
+	"devDependencies": {
+		"parcel": "^2.12.0"
+	}
 }
