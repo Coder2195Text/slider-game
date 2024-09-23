@@ -93,7 +93,7 @@ shuffle.addEventListener("click", async (e) => {
 	const space = positions.at(-1)!;
 	let last = -1;
 
-	for (let i = 0; i < Math.pow(size, 2) * 4; i++) {
+	for (let i = 0; i < Math.pow(size, 2) * 10; i++) {
 		const switchable = positions
 			.map((tile, idx) => {
 				if (canSwitch(tile) && idx !== Math.pow(size, 2) - 1 && idx !== last)
@@ -117,7 +117,7 @@ resize?.addEventListener("click", async (e) => {
 
 	let newSize = Number(prompt("Number", "4"));
 
-	if (Number.isNaN(newSize) || newSize < 4 || newSize > 8) {
+	if (Number.isNaN(newSize) || newSize < 4 || newSize > 10) {
 		return;
 	}
 
